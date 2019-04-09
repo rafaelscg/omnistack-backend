@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const path = require('path')
 const cors = require('cors')
 
-mongoose.connect('mongodb+srv://omnistack:omnistack@cluster0-k6zo8.mongodb.net/test?retryWrites=true', {
+mongoose.connect('mongodb+srv://omnistack:omnistack@cluster0-k6zo8.mongodb.net/omnistack?retryWrites=true', {
     useNewUrlParser: true
 })
 
