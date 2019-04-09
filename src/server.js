@@ -3,13 +3,13 @@ const mongoose = require('mongoose')
 const path = require('path')
 const cors = require('cors')
 
-mongoose.connect('mongodb://localhost:27017/omnistak', {
+mongoose.connect('mongodb+srv://omnistack:omnistack@cluster0-k6zo8.mongodb.net/test?retryWrites=true', {
     useNewUrlParser: true
 })
 
 const app = express()
 
-app.user(cors())
+app.use(cors())
 
 const server = require('http').Server(app)
 const io = require('socket.io')(server)
